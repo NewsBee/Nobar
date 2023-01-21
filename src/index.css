@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;600;700&display=swap');
+
+body{
+  background-color: black;
+  font-family: 'Lato','Segoe UI', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.youtube-container {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  height: 500px;
+}
+
+.harga{
+  font-size: 20px;
+}
+.bulan{
+  font-size: 16px;
+}
+
+.labl {
+  display : block;
+}
+.labl > input{ /* HIDE RADIO */
+  visibility: hidden; /* Makes input not-clickable */
+  position: absolute; /* Remove input from document flow */
+}
+.labl > input + div{ /* DIV STYLES */
+  cursor:pointer;
+  border:2px solid transparent;
+}
+.labl > input:checked + div{ /* (RADIO CHECKED) DIV STYLES */
+  background-color: rgb(75 85 99 / 0.4);
+  border: 1px solid #ff6600;
+}
+.thun{
+  font-size: 14px;
+}
